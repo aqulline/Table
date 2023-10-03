@@ -1,0 +1,146 @@
+#:import sm kivy.uix.screenmanager
+MDScreen:
+    MDNavigationLayout:
+        ScreenManager:
+            id:manager
+            transition:sm.FadeTransition(duration=.0)
+            MDScreen:
+                name:"home"
+                MDTopAppBar:
+                    title: "Dashboard"
+                    elevation: 1
+                    pos_hint: {"top": 1}
+                    md_bg_color: "#ABBEC4"
+                    specific_text_color: "#4a4939"
+
+                MD3Card:
+                    pos_hint:{"center_x":.2,"center_y":.7}
+                    FloatLayout:
+                        MDLabel:
+                            text:"General"
+                            halign:"center"
+                            font_style:"H4"
+                            color:"#4a4939"
+                            pos_hint:{"center_x":.2,"center_y":.8}
+                        MDIcon:
+                            icon:"calendar-multiselect"
+                            halign:"center"
+                            font_size:"160sp"
+                            color:"#626A68"
+                            pos_hint:{"center_x":.3,"center_y":.35}
+                MD3Card:
+                    pos_hint:{"center_x":.5,"center_y":.7}
+                    FloatLayout:
+                        MDLabel:
+                            text:"Test"
+                            halign:"center"
+                            font_style:"H4"
+                            color:"#4a4939"
+                            pos_hint:{"center_x":.2,"center_y":.8}
+                        MDIcon:
+                            icon:"calendar-week"
+                            halign:"center"
+                            font_size:"160sp"
+                            color:"#626A68"
+                            pos_hint:{"center_x":.3,"center_y":.35}
+                MD3Card:
+                    pos_hint:{"center_x":.8,"center_y":.7}
+                    FloatLayout:
+                        MDLabel:
+                            text:"Ue"
+                            halign:"center"
+                            font_style:"H4"
+                            color:"#4a4939"
+                            pos_hint:{"center_x":.2,"center_y":.8}
+                        MDIcon:
+                            icon:"calendar-month"
+                            halign:"center"
+                            font_size:"160sp"
+                            color:"#626A68"
+                            pos_hint:{"center_x":.3,"center_y":.35}
+
+            MDScreen:
+                name:"program"
+                FloatLayout:
+                    MDLabel:
+                        text:"Programme"
+                        halign:"center"
+                        font_style:"H3"
+                        color:"#4a4939"
+                        pos_hint:{"center_x":.2,"center_y":.8}
+
+        MDNavigationDrawer:
+            id: nav_drawer
+            radius: (0, 0, 0, 0)
+            type: "standard"
+            md_bg_color:"#88A2AA"
+
+            MDNavigationDrawerMenu:
+
+                MDNavigationDrawerHeader:
+                    title: "Time Table"
+                    title_color: "#4a4939"
+                    text: "Select Category"
+                    spacing: "4dp"
+                    padding: "12dp", 0, 0, "56dp"
+
+                MDNavigationDrawerLabel:
+                    text: "Category"
+
+                DrawerClickableItem:
+                    icon: "view-dashboard"
+                    #right_text: "+99"
+                    text_right_color: "#4a4939"
+                    text: "Dashboard"
+                    on_release:
+                        app.screen_capture("home")
+
+                DrawerClickableItem:
+                    icon: "list-box-outline"
+                    text_right_color: "#4a4939"
+                    text: "Programme"
+                    on_release:
+                        app.screen_capture("program")
+
+                DrawerClickableItem:
+                    icon: "account"
+                    text_right_color: "#4a4939"
+                    text: "Teacher"
+
+                DrawerClickableItem:
+                    icon: "timetable"
+                    text_right_color: "#4a4939"
+                    text: "Timetable"
+
+
+<MD3Card@MDCard>:
+    md_bg_color: "#ABBEC4"
+    padding: 4
+    size_hint: None, None
+    radius: ("30sp")
+    size: "400dp", "250dp"
+    ripple_behavior: True
+    focus_behavior:True
+    unfocus_color: "#ABBEC4"
+    focus_color: "#94ACB3"
+    ripple_color:.9, .9, .95, 1
+
+
+
+
+
+<DrawerClickableItem@MDNavigationDrawerItem>
+    focus_color: "#e7e4c0"
+    unfocus_color:"#88A2AA"
+    text_color: "#4a4939"
+    icon_color: "#4a4939"
+    ripple_color: "#c5bdd2"
+    selected_color: "#0c6c4d"
+
+
+<DrawerLabelItem@MDNavigationDrawerItem>
+    text_color: "#4a4939"
+    icon_color: "#4a4939"
+    focus_behavior: False
+    selected_color: "#4a4939"
+    _no_ripple_effect: True
