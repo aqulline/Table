@@ -1,0 +1,41 @@
+{
+    "LR 01 - B 04": {
+        "size": "80"
+    },
+    "LR 13 - B 02": {
+        "size": "27"
+    },
+    "LR 15 - B 02": {
+        "size": "27"
+    },
+    "LR 01 - Hangar": {
+        "size": "54"
+    },
+    "LR 06 - B 02": {
+        "size": "27"
+    },
+    "LR 08 - B 02": {
+        "size": "27"
+    },
+    "RWGF - B 15": {
+        "size": "50"
+    },
+    "LWGF B - B 15": {
+        "size": "54"
+    },
+    "LWGF A - B 15": {
+        "size": "30"
+    },
+    "LR 17 - B 02": {
+        "size": "54"
+    },
+    "CLASS V": {
+        "size": "88"
+    },
+    "CLASS VVI": {
+        "size": "88"
+    },
+    "CLASS VII": {
+        "size": "88"
+    }
+}

@@ -1,0 +1,350 @@
+{
+    "BAE": {
+        "size": "54"
+    },
+    "BAME": {
+        "size": "20"
+    },
+    "BATF STREAM A": {
+        "size": "200"
+    },
+    "BATF STREAM B": {
+        "size": "130"
+    },
+    "BBA": {
+        "size": "350"
+    },
+    "BCAELT": {
+        "size": "20"
+    },
+    "BCAME": {
+        "size": "25"
+    },
+    "BCATF": {
+        "size": "80"
+    },
+    "BCBA": {
+        "size": "54"
+    },
+    "BCERE": {
+        "size": "30"
+    },
+    "BCFCF": {
+        "size": "310"
+    },
+    "BCHRM": {
+        "size": "150"
+    },
+    "BCICT": {
+        "size": "158"
+    },
+    "BCLTM STREAM A": {
+        "size": "220"
+    },
+    "BCMPR": {
+        "size": "54"
+    },
+    "BCPLM": {
+        "size": "250"
+    },
+    "BCRAIM": {
+        "size": "50"
+    },
+    "BCRTLO": {
+        "size": "120"
+    },
+    "BCS": {
+        "size": "24"
+    },
+    "BCSPLO": {
+        "size": "200"
+    },
+    "BCSR": {
+        "size": "10"
+    },
+    "BEMIT": {
+        "size": "50"
+    },
+    "BHRM": {
+        "size": "350"
+    },
+    "BIT": {
+        "size": "250"
+    },
+    "BLTM - STREAM A": {
+        "size": "250"
+    },
+    "BLTM - STREAM B": {
+        "size": "250"
+    },
+    "BME": {
+        "size": "128"
+    },
+    "BMPR": {
+        "size": "300"
+    },
+    "BPLM": {
+        "size": "325"
+    },
+    "BRIDGE COURSE HDAE": {
+        "size": "54"
+    },
+    "BRIDGE COURSE HDME": {
+        "size": "150"
+    },
+    "BRIDGE COURSE HDNMAR": {
+        "size": "120"
+    },
+    "BRRTLM STREAM A": {
+        "size": "100"
+    },
+    "BRRTLM STREAM B": {
+        "size": "99"
+    },
+    "BSPLM STREAM A": {
+        "size": "120"
+    },
+    "BSPLM STREAM B": {
+        "size": "70"
+    },
+    "BTAEE": {
+        "size": "30"
+    },
+    "BCTSE": {
+        "size": "30"
+    },
+    "BTPOGE": {
+        "size": "20"
+    },
+    "CAELT": {
+        "size": "8"
+    },
+    "CAEE": {
+        "size": "16"
+    },
+    "CATF": {
+        "size": "70"
+    },
+    "CBA": {
+        "size": "20"
+    },
+    "CERE": {
+        "size": "23"
+    },
+    "CFCF STREAM A": {
+        "size": "200"
+    },
+    "CFCF STREAM B": {
+        "size": "174"
+    },
+    "CHRM": {
+        "size": "150"
+    },
+    "CICT": {
+        "size": "65"
+    },
+    "CLIS": {
+        "size": "4"
+    },
+    "CLTM - STREAM A": {
+        "size": "240"
+    },
+    "CLTM - STREAM B": {
+        "size": "240"
+    },
+    "CMPR": {
+        "size": "61"
+    },
+    "CPLM": {
+        "size": "250"
+    },
+    "CPWOGE": {
+        "size": "13"
+    },
+    "CRTLO": {
+        "size": "106"
+    },
+    "CSPLO": {
+        "size": "180"
+    },
+    "CSR": {
+        "size": "4"
+    },
+    "CTSE": {
+        "size": "23"
+    },
+    "DAE": {
+        "size": "10"
+    },
+    "DAEE": {
+        "size": "6"
+    },
+    "DAME": {
+        "size": "10"
+    },
+    "DATF": {
+        "size": "120"
+    },
+    "DBA": {
+        "size": "40"
+    },
+    "DCIT": {
+        "size": "75"
+    },
+    "DEE": {
+        "size": "17"
+    },
+    "DFCF": {
+        "size": "200"
+    },
+    "DHRM": {
+        "size": "67"
+    },
+    "DLTM STREAM A": {
+        "size": "200"
+    },
+    "DLTM STREAM B": {
+        "size": "170"
+    },
+    "DME": {
+        "size": "44"
+    },
+    "DMPR": {
+        "size": "48"
+    },
+    "DPLM": {
+        "size": "140"
+    },
+    "DRTLO": {
+        "size": "61"
+    },
+    "DSLO": {
+        "size": "131"
+    },
+    "DTEE": {
+        "size": "6"
+    },
+    "HDAE I": {
+        "size": "80"
+    },
+    "HDAE III": {
+        "size": "80"
+    },
+    "HDAME I": {
+        "size": "25"
+    },
+    "HDAME II": {
+        "size": "21"
+    },
+    "HDATF I": {
+        "size": "262"
+    },
+    "HDATF II": {
+        "size": "350"
+    },
+    "HDBA I STREAM A": {
+        "size": "180"
+    },
+    "HDBA II": {
+        "size": "330"
+    },
+    "HDCS I": {
+        "size": "103"
+    },
+    "HDCS II": {
+        "size": "28"
+    },
+    "HDEMIT I": {
+        "size": "75"
+    },
+    "HDEMIT II": {
+        "size": "100"
+    },
+    "HDHRM I": {
+        "size": "331"
+    },
+    "HDHRM II - STREAM A": {
+        "size": "200"
+    },
+    "HDHRM II - STREAM B": {
+        "size": "181"
+    },
+    "HDIT I": {
+        "size": "280"
+    },
+    "HDIT II": {
+        "size": "208"
+    },
+    "HDLTM I - STREAM A": {
+        "size": "250"
+    },
+    "HDLTM I - STREAM B": {
+        "size": "250"
+    },
+    "HDLTM II - STREAM A": {
+        "size": "250"
+    },
+    "HDLTM II - STREAM B": {
+        "size": "240"
+    },
+    "HDME I": {
+        "size": "150"
+    },
+    "HDME III": {
+        "size": "100"
+    },
+    "HDMPR I - STREAM A": {
+        "size": "200"
+    },
+    "HDMPR I - STREAM B": {
+        "size": "200"
+    },
+    "HDMPR II - STREAM A": {
+        "size": "190"
+    },
+    "HDMPR II - STREAM B": {
+        "size": "200"
+    },
+    "HDPLM I - STREAM A": {
+        "size": "200"
+    },
+    "HDPLM I - STREAM B": {
+        "size": "150"
+    },
+    "HDPLM II - STREAM A": {
+        "size": "200"
+    },
+    "HDPLM II - Stream B": {
+        "size": "200"
+    },
+    "HDRRTLM I STREAM A": {
+        "size": "200"
+    },
+    "HDRRTLM I STREAM B": {
+        "size": "200"
+    },
+    "HDRRTLM II STREAM A": {
+        "size": "200"
+    },
+    "HDRRTLM II STREAM B": {
+        "size": "200"
+    },
+    "HDSPLM I STREAM A": {
+        "size": "250"
+    },
+    "HDSPLM I STREAM B": {
+        "size": "200"
+    },
+    "HDSPLM II STREAM A": {
+        "size": "250"
+    },
+    "HDSPLM II STREAM B": {
+        "size": "250"
+    },
+    "BCLTM STREAM B": {
+        "size": "200"
+    },
+    "HDBA I STREAM B": {
+        "size": "180"
+    }
+}

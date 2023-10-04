@@ -1,0 +1,895 @@
+{
+    "BAE (54)": {
+        "module1": " AEU 08103 Engineering Management",
+        "module2": " AEU 08101 Automobile Design & Development",
+        "module3": " AEU 08104 Environmental & Safety Engineering",
+        "module4": " AEU 08102 Engine Management",
+        "module5": " AEU 08102 Engine Management"
+    },
+    "BAME (20)": {
+        "module6": " GSU 08101V Research Methodology"
+    },
+    "BATF STREAM A (200)": {
+        "module7": " BAU 08101 Transport Costing and Finance\"",
+        "module8": " BAU 08102 Introduction to Financial Reporting \"",
+        "module9": " BAU 08104 Quantitative Methods for Decision Making",
+        "module10": " BAU 08103 Taxation\"",
+        "module11": " BAU 08105 Auditing\""
+    },
+    "BATF STREAM B (130)": {
+        "module12": " BAU 08101 Transport Costing and Finance\"",
+        "module13": " BAU 08102 Introduction to Financial Reporting \"",
+        "module14": " BAU 08104 Quantitative Methods for Decision Making",
+        "module15": " BAU 08103 Taxation\"",
+        "module16": " BAU 08105 Auditing\""
+    },
+    "BBA (350)": {
+        "module17": " BBU 08105 Business Ethics and Good Governance LR 01 - B 18(160)+LR 01 - B 19(144) + LR 01 - B20 (46 students)",
+        "module18": " BBU 08102 Service Marketing",
+        "module19": " BBU 08104 Business Planning and Development",
+        "module20": " BBU 08106 e-Business",
+        "module21": " BBU 08101 Marketing Research"
+    },
+    "BCAELT(20)": {
+        "module22": " AET 04110 Basic Automobile Engineering",
+        "module23": " AET 04106 Geometrical Drawing",
+        "module24": " AET 04104 Basic Machine Elements"
+    },
+    "BCAME(25)": {
+        "module25": " AMT 04101 Basic Aviation Mathematics",
+        "module26": " AMT 04105 Communication Skills"
+    },
+    "BCATF(80)": {
+        "module27": " BCHRM (150)\"",
+        "module28": " BAT 04105 Introduction to Communication Skills",
+        "module29": " BAT 04102 Business Mathematics & Statistics",
+        "module30": " BAT 04101 Bookkeeping and Accounting I \"",
+        "module31": " BAT 04103 Introduction to Transport Finance \""
+    },
+    "BCBA(54)": {
+        "module32": " BCHRM (150)\"",
+        "module33": " GST 04101 Basic Business Communication",
+        "module34": " ITU 04101 Basic Computer Knowledge",
+        "module35": " BBT 04101 Elements of Accounting",
+        "module36": " BBT 04103 Elements of Business Administration",
+        "module37": " CTT 04105 Construction Materials",
+        "module38": " CTT 04101 Basic Mathematics",
+        "module39": " CTT 04102 Basic Communication Skills",
+        "module40": " CTT 04107 Basic Soil Mechanics",
+        "module41": " CTT 04106 Basics of Transportation Engineering",
+        "module42": " CTT 04103 Basic Computer Applications",
+        "module43": " CTT 04104 6 Basic Engineering Physics",
+        "module44": " CTT 04108 Basics of Technical Drawing"
+    },
+    "BCERE (30)": {
+        "module45": " ERT 04109 Electrical Measurements"
+    },
+    "BCFCF (310)": {
+        "module46": " LTT 04102 Basics of Accounting",
+        "module47": " ITU 04101 Basic Computer Knowledge",
+        "module48": " FCT 04103 Element of International Trade",
+        "module49": " FCT 04102 Basics of Taxation",
+        "module50": " GST 04101L Basic Business Communication",
+        "module51": " FCT 04101 Basics of Transport"
+    },
+    "BCHRM (150)": {
+        "module52": " BCHRM (150)\"",
+        "module53": " HRT 04105 Basics of Human Resource Management",
+        "module54": " GST 04101 Basic Business Communication",
+        "module55": " BBT 04101 Elements of Accounting",
+        "module56": " ITU 04101 Basic Computer Knowledge",
+        "module57": " HRT 04102 Elements of Societal and Evironmental Studies"
+    },
+    "BCICT(158)": {
+        "module58": " ITT 04107 Desktop Publishing Technologies",
+        "module59": " GST 04103 Geometry and Algebraic Computations",
+        "module60": " ITT 04101 Fundamentals of Computer Software",
+        "module61": " ITT O4106 Office Applications",
+        "module62": " GST 04104C Communication Skills",
+        "module63": " ITT 04108 Computer Maintanance",
+        "module64": " LIS 04102 Basic Concepts of Libraries",
+        "module65": " LIS 04101 Basics of Catalouging and Classification"
+    },
+    "BCLTM STREAM A (220)": {
+        "module66": " LTT 04103 Elements of Fleet Management",
+        "module67": " ITU 04101 Basic Computer Knowledge",
+        "module68": " GST 04101L Basic Business Communication",
+        "module69": " LTT 04101 Basics of Transport",
+        "module70": " LTT 04102 Basics of Accounting",
+        "module71": " MET 04106 Basics of Machine Element"
+    },
+    "BCMPR(54)": {
+        "module72": " BMT 04103 Bookkeeping\"",
+        "module73": " BMT 04101 Introduction to Business Communication Skills",
+        "module74": " BMT 04104 Basic Commercial Arithmetic",
+        "module75": " BMT 04105 Elements of Public Relations\""
+    },
+    "BCPLM(250)": {
+        "module76": " ITU 04101 Basic Computer Knowledge",
+        "module77": " BBT 04101 Elements of Accounting",
+        "module78": " PLT 04101 Elements of Procurement and Logistics",
+        "module79": " GST 04101 Basic Business Communication",
+        "module80": " HRT 04102 Elements of Societal and Evironmental Studies"
+    },
+    "BCRAIM(50)": {
+        "module81": " RAT 04104 Conservation and Preservation of Records and Archives",
+        "module82": " RAT 04102 Elements of Office Management"
+    },
+    "BCRTLO(120)": {
+        "module83": " RRT 04105 Passenger Services",
+        "module84": " RRT 04103 Basics of Computer Applications",
+        "module85": " RRT 04104 Basics of Logistics and Transport",
+        "module86": " RRT 04102 Basic Communication skills",
+        "module87": " RRT 04101 Basics of Accounting",
+        "module88": " RRT 04106 Train Formation and Movement"
+    },
+    "BCS(24)": {
+        "module89": " CSU 08101 Microcontroller and microprocessor Technologies",
+        "module90": " ITU 08102 Software Engineering",
+        "module91": " ITU 08101 Multimedia Systems",
+        "module92": " ITU 08104 Mobile Application Development",
+        "module93": " ITU 08103 Network Administration and Security"
+    },
+    "BCSPLO(200)": {
+        "module94": " SPT 04105 Basics of Shipping Operations",
+        "module95": " SPT 04102 Basics of Computer Applications",
+        "module96": " SPT 04107 Basics of Maritime Environment",
+        "module97": " SPT 04104 Basics of Logistics and Transport",
+        "module98": " SPT 04106 Shipping Knowledge",
+        "module99": " SPT 04103 Basic Business Communication Skills",
+        "module100": " SPT 04101 Basics of Accounting"
+    },
+    "BCSR(10)": {
+        "module101": " SRT 04105 Shipyard Layout and Safety",
+        "module102": " SRT 04108 Basic Material Technology",
+        "module103": " SRT 04109 Basic Marine Electrical And Electronics",
+        "module104": " SRT 04101 Maritime Communicative English",
+        "module105": " SRT 04106 Basic Engineering Science",
+        "module106": " SRT 04107 Basic Ship Structure"
+    },
+    "BEMIT(50)": {
+        "module107": " MTU 08103 Numerical Analysis",
+        "module108": " EDU 08102 Management of Education and School Administration",
+        "module109": " EDU 08101 Psychology of Exceptionalities",
+        "module110": " ITU 08102M Network Design and Administration",
+        "module111": " MTU 08102 Abstract Algebra",
+        "module112": " MTU 08101 Complex Analysis"
+    },
+    "BHRM (350)": {
+        "module113": " BBU 08105 Business Ethics and Good Governance MPH 01 - B22",
+        "module114": " HRU 08103 Performance Management",
+        "module115": " HRU 08101 Strategic Management",
+        "module116": " HRU 08104 Human Resource Information System",
+        "module117": " HRU 08105 Decision Making Techniques"
+    },
+    "BIT (250)": {
+        "module118": " ITU 08104 Mobile Application Development",
+        "module119": " GSU 08101 Entrepreneurship",
+        "module120": " ITU 08101 Multimedia Systems",
+        "module121": " ITU 08106 Distributed Systems",
+        "module122": " ITU 08102 Software Engineering",
+        "module123": " ITU 08103 Network Administration and Security"
+    },
+    "BLTM - STREAM A (250)": {
+        "module124": " LTU 08101 Urban Transport Planning",
+        "module125": " LTU 08104 Strategic Management",
+        "module126": " LTU 08102 Freight and Passenger Insurance",
+        "module127": " LTU 08103 Handling of Dangerous Goods"
+    },
+    "BLTM - STREAM B (250)": {
+        "module128": " LTU 08101 Urban Transport Planning",
+        "module129": " LTU 08104 Strategic Management",
+        "module130": " LTU 08102 Freight and Passenger Insurance",
+        "module131": " LTU 08103 Handling of Dangerous Goods"
+    },
+    "BME (128)": {
+        "module132": " MEU 08102 Computer Aided Design (CAD)",
+        "module133": " MEU 08104 Power Plant",
+        "module134": " MEU 08105 Refrigeration and Air Conditioning",
+        "module135": " MEU 08103 Engineering Operation Management",
+        "module136": " MEU 08107 Industrial Automation",
+        "module137": " MEU 08101 System and Control Engineering",
+        "module138": " GSU 08106T Law for Engineers"
+    },
+    "BMPR (300)": {
+        "module139": " BMU 08104 Business Ethics\"",
+        "module140": " LR 01 - B 18(160)+LR 01 - B 19(144)",
+        "module141": " BMU 08106 Human Resource Management\"",
+        "module142": " BMU 08101 Strategic Management\"",
+        "module143": " BMU 08102 Issues and Crisis Management\"",
+        "module144": " \"\n\", LR 01 - B 18(160)+LR 01 - B 19(144)\"",
+        "module145": " LR 01 - B 18(160)+LR 01 - B 19(144)",
+        "module146": " BMU 08103 Corporate Public Relations\"",
+        "module147": " BMU 08105 International Marketing\""
+    },
+    "BPLM (325)": {
+        "module148": " BBU 08105 Business Ethics and Good Governance LR 01 - B20 (70 students) + LR 01 - B21 (140 students) + CLASS VI (130 students)",
+        "module149": " PLU 08102 Freight Forwarding Management",
+        "module150": " PLU 08104 Procurement and Supply Chain Risk Management",
+        "module151": " PLU 08103 Procurement Management"
+    },
+    "BRIDGE COURSE HDAE (54)": {
+        "module152": " AET G5103 Automotive Electrical and Electronic Systems",
+        "module153": " AET G5207 Workshop Technology",
+        "module154": " AET G5109 Strength of Materials",
+        "module155": " AET G5106 Automotive Brake Maintenance and Repair",
+        "module156": " AET G5108 Machine Elements",
+        "module157": " AET G5105 Automotive Suspension and Steering Systems",
+        "module158": " AET G4107 Basic Automobile Layout",
+        "module159": " BRIDGE COURSE HDAE (54)\""
+    },
+    "BRIDGE COURSE HDME (150)": {
+        "module160": " MET G5206 Workshop Technology",
+        "module161": " MET G4105 Engineering Materials",
+        "module162": " GROUP 1 MET G4204 Basic Electric and Electronic System/AET 06117 Electrical and Electronic Principles",
+        "module163": " MET G5107 Strength of Materials",
+        "module164": " MET G5103 Principles of DC Machines",
+        "module165": " GROUP 2 MET G4204 Basic Electric and Electronic System",
+        "module166": " MET G4103 Basic Computer Applications",
+        "module167": " GROUP 3 MET G4204 Basic Electric and Electronic System",
+        "module168": " MET G5104 Machine Elements",
+        "module169": " BRIDGE COURSE HDME (150)\"",
+        "module170": "  DAEE (6)\", -x-\"",
+        "module171": " GROUP 4 MET G4204 Basic Electric and Electronic System",
+        "module172": " MET G5105 Engineering Measurement and Instrumentations",
+        "module173": " BRIDGE COURSE HDAE (54)\"",
+        "module174": "  BRIDGE COURSE HDME (150)\", -x-\"",
+        "module175": " GROUP 5 MET G4204 Basic Electric and Electronic System"
+    },
+    "BRIDGE COURSE HDNMAR (120)": {
+        "module176": " SRT G6107 Ship Design Methodology",
+        "module177": " SRT G7104 Ship Propulsion",
+        "module178": " SRT G6102 Basics of Ship Hydrodynamics",
+        "module179": " SRT G4104 Ship Knowledge and Equipment",
+        "module180": " SRT G6105 Ship Stability",
+        "module181": " SRT G4105 Shipyard Layout and Safety",
+        "module182": " BRIDGE COURSE HDNMAR\"",
+        "module183": " SRT G4217 Basic Engineering Drawing"
+    },
+    "BRRTLM STREAM A (100)": {
+        "module184": " RRU 08104 Railway Complexity",
+        "module185": " RRU 08106 International Logistics",
+        "module186": " RRU 08105 Logistics and Supply Chain Management",
+        "module187": " RRU 08103 Train and Traffic Control Management",
+        "module188": " RRU 08101 Strategic Transport Management",
+        "module189": " RRU 08102 Travel and Tourism"
+    },
+    "BRRTLM STREAM B (99)": {
+        "module190": " RRU 08104 Railway Complexity",
+        "module191": " RRU 08106 International Logistics",
+        "module192": " RRU 08105 Logistics and Supply Chain Management",
+        "module193": " RRU 08103 Train and Traffic Control Management",
+        "module194": " RRU 08101 Strategic Transport Management",
+        "module195": " RRU 08102 Travel and Tourism"
+    },
+    "BSPLM STREAM A (120)": {
+        "module196": " SPU 08104 Port and Terminal Operations Management",
+        "module197": " SPU 08105 Maritime Environment and Sustainability",
+        "module198": " SPU 08103 International Logistics and Supply Chain Management",
+        "module199": " SPU 08101 Business Ethics and Good Governance",
+        "module200": " SPU 08102 Maritime Risk Management"
+    },
+    "BSPLM STREAM B (70)": {
+        "module201": " SPU 08104 Port and Terminal Operations Management",
+        "module202": " SPU 08105 Maritime Environment and Sustainability",
+        "module203": " SPU 08103 International Logistics and Supply Chain Management",
+        "module204": " SPU 08101 Business Ethics and Good Governance",
+        "module205": " SPU 08102 Maritime Risk Management"
+    },
+    "BTAEE (30)": {
+        "module206": " MET 04105 Basics of Manufacturing Engineering",
+        "module207": " AET 04101 Basics of Automotive Technology",
+        "module208": " GST 04102 Mechanics and Nuclear Physics"
+    },
+    "BCTSE (30)": {
+        "module209": " TRT 04109 Electronic Measurements"
+    },
+    "BTPOGE(20)": {
+        "module210": " MET 04122 Plumbing Components Preparation and Assembling",
+        "module211": " MET 04101 Basics of Engineering Drawing",
+        "module212": " MET 04124 Safe Works Practices",
+        "module213": " MET 04123 Fundamentals of Electrical Engineering Science",
+        "module214": " MET 04125 Fundamentals of Manufacturing Engineering",
+        "module215": " MET 04121 Materials for Pipe works\""
+    },
+    "CAELT(8)": {
+        "module216": " AET 05106 Automotive Brake Repair and Maintenance",
+        "module217": " AET 05105 Automotive Suspension and Steering Systems",
+        "module218": " AET 05102 Automotive Electrical & Electronic Systems",
+        "module219": " AET 05101 Internal Combustion Engines",
+        "module220": " AET 05102 Principles of Entrepreneurship"
+    },
+    "CAEE (16)": {
+        "module221": " MET 05102 Machine Element & Design I",
+        "module222": " MET 05103Welding and Metal Fabrication",
+        "module223": " AET 05105 Basics of Engine Managements",
+        "module224": " MET 05102 Strength of Materials",
+        "module225": " GST 05103 Introduction to Programming Using C"
+    },
+    "CATF (70)": {
+        "module226": " BAT 05104 Elements of Economics\"",
+        "module227": " BAT 05102 Introduction to Accounting\"",
+        "module228": " BAT 05103 Business Mathematics & Statistics",
+        "module229": " BAT 05101 Introduction to Cost Accounting\""
+    },
+    "CBA (20)": {
+        "module230": " BBT 05101 Principles of Accounting",
+        "module231": " CRTLO (106)\"",
+        "module232": " BBT 05105 Principles of Business Administration"
+    },
+    "CERE (23)": {
+        "module233": " ERT 05106 Transformer",
+        "module234": " EET 05101 DC Machines",
+        "module235": " CRTLO (106)\"",
+        "module236": " ERT 05104 Analogue Electronic Devices and Circuits",
+        "module237": " ERT 05104 Analogue Electronic Devices and Circuits"
+    },
+    "CFCF STREAM A (200)": {
+        "module238": " FCT 05102 International Organizations in Freight Forwarding",
+        "module239": " ITT 05101L Information and Communication Technology",
+        "module240": " FCT 05101 Customs in International and National Context",
+        "module241": " FCT 05103 Principles of Accounting",
+        "module242": " GST 05101L Basics of Entrepreneurship skills"
+    },
+    "CFCF STREAM B (174)": {
+        "module243": " FCT 05102 International Organizations in Freight Forwarding",
+        "module244": " ITT 05101L Information and Communication Technology",
+        "module245": " FCT 05101 Customs in International and National Context",
+        "module246": " FCT 05103 Principles of Accounting",
+        "module247": " GST 05101L Basics of Entrepreneurship skills"
+    },
+    "CHRM (150)": {
+        "module248": " BBT 05101 Principles of Accounting",
+        "module249": " HRT 05102 Fundamentals of Office Management",
+        "module250": " HRT 05101 Fundamentals of Human Resource Management",
+        "module251": " BBT 05103 Principles of Entrepreneurship"
+    },
+    "CICT (65)": {
+        "module252": " BBT 05106 Principles of Accounting",
+        "module253": " HDCS I(103)\"",
+        "module254": " ITT 05108 Computer Maintenance and Repair I",
+        "module255": " CRTLO (106)\"",
+        "module256": " ITT 05107 Fundamentals of Operating Systems",
+        "module257": " ITT 05110 Basic Computing Mathematics",
+        "module258": " ITT 05109 Fundamental of Computer Networking"
+    },
+    "CLIS (4)": {
+        "module259": " GST 05101 Basics of Entrepreneurship Skills"
+    },
+    "CLTM - STREAM A (240)": {
+        "module260": " LTT 05102 Principles of Physical Distribution",
+        "module261": " ITT 05101L Information and Communication Technology",
+        "module262": " LTT 05101 Basic of Logistics Management",
+        "module263": " LTT 05103 Principles of Accounting",
+        "module264": " GST 05101L Basics of Entrepreneurship skills"
+    },
+    "CLTM - STREAM B (240)": {
+        "module265": " LTT 05102 Principles of Physical Distribution",
+        "module266": " ITT 05101L Information and Communication Technology",
+        "module267": " LTT 05101 Basic of Logistics Management",
+        "module268": " LTT 05103 Principles of Accounting",
+        "module269": " GST 05101L Basics of Entrepreneurship skills",
+        "module270": " MET 05105 Engineering Measurements & Instrumentation",
+        "module271": " MET 05111 Railway Carriage Engineering",
+        "module272": " MET 05110 Principles of D.C and A.C Machines",
+        "module273": " AET 05102 Principles of Entrepreneurship"
+    },
+    "CMPR (61)": {
+        "module274": " BAT 05103 Business Mathematics & Statistics",
+        "module275": " BMT 05104 Principles of Accounting and Costing\"",
+        "module276": " BMT 05105 Public Relations and Advertising\"",
+        "module277": " BMT 05103 Commercial Knowledge\""
+    },
+    "CPLM (250)": {
+        "module278": " BBT 05101 Principles of Accounting",
+        "module279": " PLT 05101 Principles of Physical Distribution",
+        "module280": " BBT 05103 Principles of Entrepreneurship",
+        "module281": " ITT 05101 Basic Computer Application",
+        "module282": " PLT 05102 Principles of Stores Administration"
+    },
+    "CPWOGE (13)": {
+        "module283": " MET 05104 Basics of Machine Element and Design",
+        "module284": " MET 05102 Strength of Materials",
+        "module285": " MET 05107 Fire protection piping systems",
+        "module286": " MET 05106 Low and High pressure Steam piping systems",
+        "module287": " MET 05103 Welding and Metal Fabrication",
+        "module288": " MET 05105 Engineering Thermodynamics"
+    },
+    "CRTLO (106)": {
+        "module289": " RRT 05101 Train Operating System",
+        "module290": " RRT 05104 Basics of Logistics Management",
+        "module291": " RRT 0506 Computer Applications",
+        "module292": " RRT 05102 Railway Equipment and Facilities",
+        "module293": " CRTLO (106)\"",
+        "module294": " RRT 05108 Principles of Accounting",
+        "module295": " RRT 05103 Basic Automobile Technology",
+        "module296": " RRT 05105 Basics of Customer Service and Marketing"
+    },
+    "CSPLO (180)": {
+        "module297": " SPT 05105 Customs and Other Government Departments (OGDs) procedures and regulations",
+        "module298": " SPT 05106 Element of Fleet Management",
+        "module299": " SPT 05103 Shipping Operations",
+        "module300": " SPT 05101 Principles of Entrepreneurship",
+        "module301": " SPT 05102 Computer Applications",
+        "module302": " SPT 05104 Warehousing Operations"
+    },
+    "CSR(4)": {
+        "module303": " SRT 05105 Foundry Technology",
+        "module304": " SRT 05106 Marine Electro -Technology",
+        "module305": " SRT 05104 Basic Computer Aided Drafting and Application",
+        "module306": " SRT 05107 Basics of Ship Vibration",
+        "module307": " SRT 05103 Fluid Mechanics",
+        "module308": " BRIDGE COURSE HDNMAR\""
+    },
+    "CTSE (23)": {
+        "module309": " GST 05101 Differentiation and Integration",
+        "module310": " ETT 05104 Antennas and Transmission Lines",
+        "module311": " ETT 05102 Computer Aided Design Tools",
+        "module312": " EET 05104 Control Engineering",
+        "module313": " ETT 05103 Television Technology",
+        "module314": " ETT 05101 Electronics Devices and Circuit"
+    },
+    "DAE(10)": {
+        "module315": " AET 06104 Electronic Ignition and Fuel Injection",
+        "module316": " AET 06101 Computing Mathematics and Statistics",
+        "module317": " AET 06105 Internal Combustion Engine",
+        "module318": " AET 06103 Basics of Workshop Management",
+        "module319": " AET 06102 Basic Programming with C/C ++",
+        "module320": " AET 06106 Advanced Locomotive Maintenance and Repair",
+        "module321": " AET 06110 Road safety and Accidents InvestigationAET 06111 Vehicle Inspection and Appraisal"
+    },
+    "DAEE (6)": {
+        "module322": " AET 6112 Automotive Diagnosis",
+        "module323": "  DPWOGE\", -x-\"",
+        "module324": " GROUP 1 MET G4204 Basic Electric and Electronic System/AET 06117 Electrical and Electronic Principles",
+        "module325": " AET 06117 Electrical and Electronic Principles",
+        "module326": " AET 06115 Ignition and Engine Control System Service",
+        "module327": " AET 06114 Basic Electrical Test Procedures",
+        "module328": " AET 06116 Electrical Fault and Test Equipment",
+        "module329": " BRIDGE COURSE HDME (150)\"",
+        "module330": "  DAEE (6)\", -x-\"",
+        "module331": " AET 06113 Charging and Starting Systens Services",
+        "module332": "  DPWOGE\", -x-\""
+    },
+    "DAME (10)": {
+        "module333": " AMT 06107 Entrepreneurship for Technician"
+    },
+    "DATF (120)": {
+        "module334": " BAT 06105 Introduction to Auditing\"",
+        "module335": " BAT 06104 Principles of procurement and Logistics\"",
+        "module336": " BAT 06103 Business Mathematics & Statistics",
+        "module337": " BAT 06101 Principles of Economics and Taxation\"",
+        "module338": " BAT 06102 Introduction to Accounting\""
+    },
+    "DBA (40)": {
+        "module339": " BBT 06103 Store Administration and Inventory Control",
+        "module340": " GST 06102 Fundamentals of Business Law",
+        "module341": " BBT 06101 Principles of Financial Accounting"
+    },
+    "DCIT (75)": {
+        "module342": " ITT 06107 IT Project Management",
+        "module343": " GST 06101 Development Studies",
+        "module344": " ITT 06106 Web Application Development",
+        "module345": " ITT 06104 Object Oriented Programming",
+        "module346": " ITT 06108 Multimedia Concepts"
+    },
+    "DEE(17)": {
+        "module347": " EET 06101 Induction Motors",
+        "module348": " EET 06104 Electrical Power Protection"
+    },
+    "DFCF (200)": {
+        "module349": " FCT 06103 Transport Geography",
+        "module350": " FCT 06102 Port and Airport Operations",
+        "module351": " FCF 06104 Customs Enforcement\"",
+        "module352": " GST 06102 Intoduction to Business Law",
+        "module353": " LTT 06101 Basics of Management Accounting",
+        "module354": " GST 06101 Development Studies"
+    },
+    "DHRM (67)": {
+        "module355": " HRT 06102 Industrial Relations",
+        "module356": " HRT 06101 Human Resource Planning",
+        "module357": " HRT 06104 Staff Recruitment and Selection"
+    },
+    "DLTM STREAM A (200)": {
+        "module358": " GST 06102 Intoduction to Business Law",
+        "module359": " LTT 06103 Passengers Transport",
+        "module360": " LTT 06104 Basics of Management Accounting",
+        "module361": " GST 06101 Development Studies"
+    },
+    "DLTM STREAM B(170)": {
+        "module362": " GST 06102 Intoduction to Business Law",
+        "module363": " LTT 06103 Passengers Transport",
+        "module364": " LTT 06104 Basics of Management Accounting",
+        "module365": " GST 06101 Development Studies"
+    },
+    "DME(44)": {
+        "module366": " MET 06102 Computing Mathematics and Statistics",
+        "module367": " MET 06105 Farm Machinery & Power",
+        "module368": " MET 06103 Production Technology",
+        "module369": " MET 06107 Basics of Automation",
+        "module370": " MET 06101 Basic Programming with C/C++",
+        "module371": " MET 06104 Basics of Refrigeration Systems"
+    },
+    "DMPR (48)": {
+        "module372": " BMT 06101 Introduction to Business Law and Ethics\"",
+        "module373": " BMT 06104 Buyer Behaviour and Consumerism\"",
+        "module374": " BMT 06102 Principles of Office Practice and Records Management \"",
+        "module375": " BMT 06105 Business Information Technology",
+        "module376": " BMT 06103 Integrated Marketing Communication\""
+    },
+    "DPLM (140)": {
+        "module377": " PLT 06101 Procurement Procedures",
+        "module378": " PLT 06102 Basics of Cost Accounting",
+        "module379": " GST 06102 Fundamentals of Business Law",
+        "module380": " GST 06101 Development Studies",
+        "module381": " MET 06110 Domestic and Commercial Gas Fired Apliances",
+        "module382": " MET 06106 Environmental Engineering",
+        "module383": " \"MET 06109 Gas Piping\"",
+        "module384": " MET 06108 Fundamental of Gas Technology",
+        "module385": " MET 06102 Machine Elements and Design"
+    },
+    "DRTLO(61)": {
+        "module386": " RRT 06105 Intermodal and Multimodal Transport",
+        "module387": " RRT 06103 Principles of Road and Rail Transport Economics",
+        "module388": " RRT 06104 Transport Geography",
+        "module389": " RRT 06106 Basics of Professional Ethics",
+        "module390": " RRT 0602 Handling and Prevention of Claims",
+        "module391": " RRT 06101 Station Accounts and Operations Inspection"
+    },
+    "DSLO (131)": {
+        "module392": " SPT 06104 Transport Geography",
+        "module393": " SPT 06101 Cost Accounting",
+        "module394": " SPT 06106 International Trade Law",
+        "module395": " SPT 06105 Maritime Logistics",
+        "module396": " SPT 06103 Principles of Economics",
+        "module397": " SPT 06102 Principles of Management",
+        "module398": " SRT 06109 Marine Diesel Engine and Auxiliary Machinery",
+        "module399": " SRT 06106 Ship Structure",
+        "module400": " SRT 06103 Ship Propulsion",
+        "module401": " SRT 06102 Basics of Ship Hydrodynamics",
+        "module402": " SRT 06104 Composite Material Technology",
+        "module403": " SRT 06101 Computing Mathematics and Statistics"
+    },
+    "DTEE(6)": {
+        "module404": " ETT 06104 Radar and Navigation Systems",
+        "module405": " ETT 06103 Television and Video Engineering"
+    },
+    "HDAE I(80)": {
+        "module406": " AEU 07101 Communication Skills",
+        "module407": " HDME I(150)\"",
+        "module408": " AEU 07104 Advanced Engineering Thermodynamics",
+        "module409": " AEU 07103 Linear Algebra & Complex Numbers",
+        "module410": " AEU 07107 Manufacturing/Production Technology",
+        "module411": " AEU 07106 Automobile Development",
+        "module412": " AEU 07102 Computing and Applications"
+    },
+    "HDAE III(80)": {
+        "module413": " AEU 07505 Automobile Electrical and Electronic Systems",
+        "module414": " AEU 07501 Vehicle Aerodynamics and Vehicle Body Construction",
+        "module415": " AEU 07504 Vehicle Dynamics and Control",
+        "module416": " AEU 07502 Hydraulic and Pneumatics Systems Design",
+        "module417": " AEU 07503 Advanced Brakes and Driven Train Systems",
+        "module418": " GSU 07505T Integral Calculus"
+    },
+    "HDAME I (25)": {
+        "module419": " GSU 07101V Technical Communication Skills",
+        "module420": " GSU 07102V Linear Algebra"
+    },
+    "HDAME II (21)": {
+        "module421": " GSU 07301 Differential Equation"
+    },
+    "HDATF I (262)": {
+        "module422": " BAU 07105 Development Studies",
+        "module423": " BAU 07103 Communication Skills",
+        "module424": " BAU 07102 Business Mathematics",
+        "module425": " BAU 07101 Principles of Accounting\"",
+        "module426": " BAU 07104 Freight and Transportation Accounting\"",
+        "module427": " Class VIII(130)+LR 01 - B 21(140)",
+        "module428": " LR 01 - B 18(160)+LR 01 - B 19(144)"
+    },
+    "HDATF II (350)": {
+        "module429": " BAU 07313 Risks Management\"",
+        "module430": " BAU 07312 Marketing Management\"",
+        "module431": " BAU 07311 Cost Accounting\"",
+        "module432": " BAU 07315 Business Law",
+        "module433": " BAU 07314 Research Methodology and Consultancy"
+    },
+    "HDBA I STREAM A (180)": {
+        "module434": " BBU 07101 Management Principles and Practice",
+        "module435": " BBU 07103 Financial Accounting",
+        "module436": " GSU 07101 Business Communication Skills",
+        "module437": " ITU 07101 Computer Applications",
+        "module438": " BBU 07102 Business Taxation",
+        "module439": " GSU 07104 Business Statistics"
+    },
+    "HDBA II (330)": {
+        "module440": " GSU 07309 Bussiness Law",
+        "module441": " BBU 07312 Business Environment",
+        "module442": " BBU 07310 Organisation Behaviour\"",
+        "module443": " MPH 01 - B 22(350)",
+        "module444": " MPH 01 - B 22(350)",
+        "module445": " GSU 07303 Development Studies",
+        "module446": " BBU 07311 Corporate Governance"
+    },
+    "HDCS I(103)": {
+        "module447": " GSU 07101 Business Communication Skills",
+        "module448": " HDCS I(103)\"",
+        "module449": " GSU 07102C Development Studies",
+        "module450": " ITU 07103 Programming Principles",
+        "module451": " GSU 07103C Computing Mathematics",
+        "module452": " ITU 07101 Business Information Systems"
+    },
+    "HDCS II(28)": {
+        "module455": " ITU 07301 Database Technologies",
+        "module456": " CSU 07304 Electronic Concepts",
+        "module457": " ITU 07302 System Analysis and Design",
+        "module458": " ITU 07305 Data Structure and Alogarithms",
+        "module459": " ITU 07303 Web Design and Internet"
+    },
+    "HDEMIT I(75)": {
+        "module460": " GSU 07101M Communication Skills",
+        "module461": " ITU 07102M Fundamentals of Computer Programming",
+        "module462": " HDEMIT I(75)\"",
+        "module463": " MTU 07101 Fundamentals of Mathematical Analysis",
+        "module464": " MTU 07103 Introduction to Statistics",
+        "module465": " ITU 07101M Introduction to Microcomputer and Application",
+        "module466": " EDU 07102 Educational Psychology",
+        "module467": " ITU 07103 Basics in Digital Circuit",
+        "module468": " EDU 07101 Principles of Education"
+    },
+    "HDEMIT II(100)": {
+        "module469": " EDU 07307 Educational Research",
+        "module470": " EDU 07309 School Governance",
+        "module471": " MTU 07307 Functions of Several Variables",
+        "module472": " EDU 07306 Curriculum Development and Teaching",
+        "module473": " ITU 07307M Introduction to Computer Graphics and Image processing",
+        "module474": " MTU 07308 Mathematical Statistics",
+        "module475": " MTU 07306 Linear Programming",
+        "module476": " ITU 07306M Database Concepts"
+    },
+    "HDHRM I (331)": {
+        "module477": " BBU 07101 Management Principles and Practice",
+        "module478": " HRU 07101 Organizational Development",
+        "module479": " GSU 07101 Business Communication Skills",
+        "module480": " GSU 07104 Business Mathematics & Statistics",
+        "module481": " ITU 07101 Computer Applications",
+        "module482": " HRU 07102 Administrative Law"
+    },
+    "HDHRM II - STREAM A(200)": {
+        "module483": " GSU 07303 Development Studies",
+        "module484": " BBU 07206 Procurement and Supply Procedures",
+        "module485": " BBU 07311 Corporate Governance",
+        "module486": " BBU 07312 Business Environment"
+    },
+    "HDHRM II - STREAM B(181)": {
+        "module487": " GSU 07303 Development Studies",
+        "module488": " BBU 07206 Procurement and Supply Procedures",
+        "module489": " HRU 07307 Principles of Business Accounting",
+        "module490": " BBU 07311 Corporate Governance",
+        "module491": " BBU 07312 Business Environment"
+    },
+    "HDIT I (280)": {
+        "module492": " GSU 07101 Business Communication Skills",
+        "module493": " ITU 07102 Computer Design and Architecture",
+        "module494": " MTU 07102 Introduction to Linear Algebra/NMU 07102 Linear Algebra",
+        "module495": " MTU 07101 Fundamentals of Mathematical Analysis",
+        "module496": " ITU 07103 Programming Principles",
+        "module497": " ITU 07101 Business Information Systems"
+    },
+    "HDIT II (208)": {
+        "module500": " ITU 07307 Database Systems",
+        "module501": " ITU 07308 Electronic Commerce",
+        "module502": " GSU 07303 Development Studies",
+        "module503": " MTU 07308 Mathematical Statistics",
+        "module504": " ITU 07310 Computerized Accounting",
+        "module505": " ITU 07304 Principles of Accounting",
+        "module506": " ITU 07309 Operating System Administration"
+    },
+    "HDLTM I - STREAM A(250)": {
+        "module507": " GSU 07101 Business Communication Skills",
+        "module508": " LTU 07103 Transport Statistics",
+        "module509": " LTU 07102 Managerial Accounting",
+        "module510": " ITU 07101 Computer Applications",
+        "module511": " LTU 07104 Transport Safety and Security",
+        "module512": " LTU 07101 Road Transport Management"
+    },
+    "HDLTM I - STREAM B(250)": {
+        "module513": " GSU 07101 Business Communication Skills",
+        "module514": " LTU 07103 Transport Statistics",
+        "module515": " LTU 07102 Managerial Accounting",
+        "module516": " ITU 07101 Computer Applications",
+        "module517": " LTU 07104 Transport Safety and Security",
+        "module518": " LTU 07101 Road Transport Management"
+    },
+    "HDLTM II - STREAM A(250)": {
+        "module519": " LTU 07301 Transport Planning and Policy",
+        "module520": " LTU 07305 Maritime Transport Management",
+        "module521": " LTU 07302 Transport Economics",
+        "module522": " LTU 07304 Law of Bussiness and Carriage",
+        "module523": " GSU 07303L Development Studies"
+    },
+    "HDLTM II - STREAM B(240)": {
+        "module524": " LTU 07301 Transport Planning and Policy",
+        "module525": " LTU 07305 Maritime Transport Management",
+        "module526": " LTU 07302 Transport Economics",
+        "module527": " LTU 07304 Law of Bussiness and Carriage",
+        "module528": " GSU 07303L Development Studies"
+    },
+    "HDME I(150)": {
+        "module529": " MEU 07109 Communication skills",
+        "module530": " HDME I(150)\"",
+        "module531": " MEU 07112 Advanced Engineering Thermodyamics",
+        "module532": " MEU 07110 Linear Algbra",
+        "module533": " MEU 07114 Metal Cutting Processes",
+        "module534": " MEU 07111 Fundamental of Computer Programming"
+    },
+    "HDME III(100)": {
+        "module535": " MEU 07503 Machine Tool Dsign",
+        "module536": " MEU 07509E Farm Tractors and Equipments",
+        "module537": " GSU 07502T Techno-Entrepreneurship",
+        "module538": " MEU 07504 Hydraulic and Pneumatic System",
+        "module539": " MEU 07507 Internal Combustion Engines",
+        "module540": " MEU 07505 Measurement and Control",
+        "module541": " GSU 07505T Integral Calculus",
+        "module542": " MEU 07508E Port Handling Machinery",
+        "module543": " MEU 07506 Metal Casting and Forming Process"
+    },
+    "HDMPR I - STREAM A(200)": {
+        "module544": " BMU 07101 Business Communication Skills and report writing",
+        "module545": " BMU 07104 Business and Transport Law",
+        "module546": " BMU 07105 Development Studies",
+        "module547": " BMU 07103 Business Mathematics & Statistics",
+        "module548": " BMU 07102 Public Relations \"",
+        "module549": " BBU 07101 Management Principles and Practice"
+    },
+    "HDMPR I - STREAM B(200)": {
+        "module550": " BBU 07101 Management Principles and Practice",
+        "module551": " BMU 07101 Business Communication Skills and report writing",
+        "module552": " BMU 07104 Business and Transport Law",
+        "module553": " BMU 07105 Development Studies",
+        "module554": " BMU 07103 Business Mathematics & Statistics",
+        "module555": " BMU 07102 Public Relations \""
+    },
+    "HDMPR II - STREAM A(190)": {
+        "module556": " BMU 07316 Marketing Research\"",
+        "module557": " BMU 07315 Research Methodology and Consultancy",
+        "module558": " BMU 07314 Quantitative Methods for Business",
+        "module559": " BMU 07313 Customer Relationship Management \"",
+        "module560": " BMU 07317 Organizational Behaviour\"",
+        "module561": " BMU 07312 Business Accounting and Costing\""
+    },
+    "HDMPR II - STREAM B(200)": {
+        "module562": " BMU 07316 Marketing Research\"",
+        "module563": " BMU 07315 Research Methodology and Consultancy",
+        "module564": " BMU 07314 Quantitative Methods for Business",
+        "module565": " BMU 07313 Customer Relationship Management \"",
+        "module566": " BMU 07317 Organizational Behaviour\"",
+        "module567": " BMU 07312 Business Accounting and Costing\"",
+        "module568": " NMU 07104 Strength of Materials",
+        "module569": " NMU 07101 Communication Skills",
+        "module570": " HDEMIT I(75)\"",
+        "module571": " NMU 07107 Ship Structure",
+        "module572": " NMU 07109 Fluid Mechanics",
+        "module573": " NMU 07108 Diesel Engine and Auxiliary Machinery",
+        "module574": " NMU 07105 Engineering Thermodynamics",
+        "module575": " NMU 07103 Computer Programming with C++",
+        "module576": " NMU 07106 Marine Electro - Technology",
+        "module577": " NMU 07307 Ship Structure and Scantling",
+        "module578": " NMU 07308 Ship Construction",
+        "module579": " NMU 07303 Ship Structural Dynamics",
+        "module580": " NMU 07306 Ship Stability",
+        "module581": " NMU 07301 Differential Calculus",
+        "module582": " NMU 07304 Ship Hydrodynamics",
+        "module583": " NMU 07305 Marine Construction Materials"
+    },
+    "HDPLM I - STREAM A(200)": {
+        "module584": " BBU 07103 Financial Accounting",
+        "module585": " GSU 07101 Business Communication Skills",
+        "module586": " ITU 07101 Computer Applications",
+        "module587": " GSU 07104 Business Statistics",
+        "module588": " PLU 07101 Procurement and Supply Techniques"
+    },
+    "HDPLM I - STREAM B(150)": {
+        "module589": " BBU 07103 Financial Accounting",
+        "module590": " GSU 07101 Business Communication Skills",
+        "module591": " ITU 07101 Computer Applications",
+        "module592": " GSU 07104 Business Statistics",
+        "module593": " PLU 07101 Procurement and Supply Techniques",
+        "module594": " BBU 07101 Management Principles and Practice"
+    },
+    "HDPLM II - STREAM A(200)": {
+        "module595": " PLU 07305 Legal Aspects of Procurement",
+        "module596": " PLU 07304 Managerial Economics",
+        "module597": " GSU 07303 Development Studies",
+        "module598": " PLU 07307 Procurement Contract Management",
+        "module599": " PLU 07306 Public Procurement"
+    },
+    "HDPLM II - Stream B(200)": {
+        "module600": " PLU 07305 Legal Aspects of Procurement",
+        "module601": " PLU 07304 Managerial Economics",
+        "module602": " GSU 07303 Development Studies",
+        "module603": " PLU 07307 Procurement Contract Management",
+        "module604": " PLU 07306 Public Procurement"
+    },
+    "HDRRTLM I STREAM A(200)": {
+        "module605": " RRU 07101 Business Communication Skills",
+        "module606": " RRU 07102 Computer Applications",
+        "module607": " RRU 07105 Logistics and Transport Management",
+        "module608": " RRU 07108 Transport Statistics",
+        "module609": " RRU 07103 Managerial Accounting",
+        "module610": " RRU 07104 Train and Traffic Control Management",
+        "module611": " RRU 07106 Rail Transport System",
+        "module612": " RRU 07107 Intermodal and Multimodal Transport"
+    },
+    "HDRRTLM I STREAM B(200)": {
+        "module613": " RRU 07101 Business Communication Skills",
+        "module614": " RRU 07102 Computer Applications",
+        "module615": " RRU 07105 Logistics and Transport Management",
+        "module616": " RRU 07108 Transport Statistics",
+        "module617": " RRU 07103 Managerial Accounting",
+        "module618": " RRU 07104 Train and Traffic Control Management",
+        "module619": " RRU 07106 Rail Transport System",
+        "module620": " RRU 07107 Intermodal and Multimodal Transport"
+    },
+    "HDRRTLM II STREAM A(200)": {
+        "module621": " RRU 07316 Logistics and Information Technology",
+        "module622": " RRU 07317 Intelligent Transport System",
+        "module623": " RRU 07319 Inventory and Ware House Management",
+        "module624": " RRU 07315 Development Studies",
+        "module625": " RRU 07211 Road and Railway Transport Safety\"",
+        "module626": " RRU 07318 Fleet Operation Management"
+    },
+    "HDRRTLM II STREAM B(200)": {
+        "module627": " RRU 07316 Logistics and Information Technology",
+        "module628": " RRU 07317 Intelligent Transport System",
+        "module629": " RRU 07319 Inventory and Ware House Management",
+        "module630": " RRU 07315 Development Studies",
+        "module631": " RRU 07211 Road and Railway Transport Safety\"",
+        "module632": " RRU 07318 Fleet Operation Management"
+    },
+    "HDSPLM I STREAM A(250)": {
+        "module633": " SPU 07103 Business Mathematics and Statistics",
+        "module634": " SPU 07101 Business Communication Skills",
+        "module635": " SPU 07105 Shipping Operations Management",
+        "module636": " SPU 07106 Maritime Safety and Security",
+        "module637": " SPU 07104 Organizational Behaviour",
+        "module638": " SPU 07102 Computer Applications"
+    },
+    "HDSPLM I STREAM B(200)": {
+        "module639": " SPU 07103 Business Mathematics and Statistics",
+        "module640": " SPU 07101 Business Communication Skills",
+        "module641": " SPU 07105 Shipping Operations Management",
+        "module642": " SPU 07106 Maritime Safety and Security",
+        "module643": " SPU 07104 Organizational Behaviour",
+        "module644": " SPU 07102 Computer Applications"
+    },
+    "HDSPLM II STREAM A(250)": {
+        "module645": " SPU 07314 Warehousing Management",
+        "module646": " SPU 07317 Customs procedures and shipping documentations",
+        "module647": " SPU 07318 Law of Business and Carriage",
+        "module648": " SPU 07315 Development Studies",
+        "module649": " SPU 07319 Maritime Insurance"
+    },
+    "HDSPLM II STREAM B(250)": {
+        "module650": " SPU 07314 Warehousing Management",
+        "module651": " SPU 07317 Customs procedures and shipping documentations",
+        "module652": " SPU 07318 Law of Business and Carriage",
+        "module653": " SPU 07315 Development Studies",
+        "module654": " SPU 07319 Maritime Insurance"
+    },
+    "BCLTM STREAM B (200)": {
+        "module655": " LTT 04103 Elements of Fleet Management",
+        "module656": " ITU 04101 Basic Computer Knowledge",
+        "module657": " GST 04101L Basic Business Communication",
+        "module658": " LTT 04101 Basics of Transport",
+        "module659": " LTT 04102 Basics of Accounting"
+    },
+    "HDBA I STREAM B (180)": {
+        "module660": " GSU 07101 Business Communication Skills",
+        "module661": " GSU 07104 Business Statistics",
+        "module662": " BBU 07102 Business Taxation",
+        "module663": " ITU 07101 Computer Applications",
+        "module664": " BBU 07101 Management Principles and Practice",
+        "module665": " BBU 07103 Financial Accounting"
+    }
+}
