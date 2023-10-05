@@ -486,13 +486,64 @@ MDScreen:
                 name:"venues"
                 FloatLayout:
                     Deco:
+                        pos_hint:{"center_x":.5,"center_y":1.08}
                     MDLabel:
-                        text:"Programme"
+                        text:"Venues"
                         halign:"center"
                         font_style:"H4"
                         color:"#4a4939"
                         pos_hint:{"center_x":.09,"center_y":.94}
                         font_name:"components/fonts/Gill Sans.otf"
+                    MDTextField:
+                        id:Vsearch
+                        hint_text: "search Venues"
+                        mode: "round"
+                        helper_text: "Search Programme"
+                        line_color_focus: "#ABBEC4"
+                        icon_left_color_normal: "#ABBEC4"
+                        size_hint: .2, .05
+                        font_size: dp(25)
+                        height: "90dp"
+                        icon_left: "magnify"
+                        pos_hint:{"center_x":.7,"center_y":.93}
+                        on_text:
+                            app.search_venue(Vsearch.text)
+                    MDRectangleFlatIconButton:
+                        md_bg_color:"#626A68"
+					    text: "Add Venue"
+					    icon: "plus"
+					    text_color: "white"
+					    icon_color: "white"
+					    line_color: "white"
+					    rounded_button:True
+					    size_hint: .1, .05
+					    elevation:2
+					    pos_hint: {"center_x": .9, "center_y": .93}
+					    font_name:"components/fonts/Gill Sans.otf"
+					    on_release:
+					        app.add_venue_pos = .5
+					        app.info_display_pos = 9
+					        app.edit_form_pos = 9
+				    AddVenue:
+				        pos_hint:{"center_x":app.add_venue_pos,"center_y":.73}
+				    VnInfo:
+				        pos_hint:{"center_x":app.info_display_pos,"center_y":.73}
+			        EditForm:
+			            pos_hint:{"center_x":app.edit_form_pos,"center_y":.73}
+                    RecycleView:
+		                id:disvenues
+		                key_viewclass: 'viewclass'
+		                key_size: 'height'
+		                pos_hint:{"center_x":.5,"top":.6}
+		                RecycleGridLayout:
+		                    id:wall
+		                    cols:4
+		                    spacing:dp(10)
+		                    padding: dp(10)
+		                    default_size: None, dp(40)
+		                    default_size_hint: 1, None
+		                    size_hint_y: None
+		                    height: self.minimum_height
 		    MDScreen:
                 name:"timetable"
                 MDLabel:
@@ -787,7 +838,7 @@ MDScreen:
                     text: "Venues"
                     on_release:
                         app.screen_capture("venues")
-                        app.load_all_programmes()
+                        app.load_venues()
 
                 DrawerClickableItem:
                     icon: "account"
@@ -842,6 +893,43 @@ MDScreen:
             halign:"left"
             pos_hint:{"center_x":.65,"center_y":.5}
             font_name:"components/fonts/Gill Sans.otf"
+
+<VenCard@MDCard>:
+    #orientation: "vertical"
+    md_bg_color: "#ABBEC4"
+    pos_hint:{"center_x":.5,"center_y":.3}
+    padding: "10dp"
+    #spacing: "5dp"
+    border_radius: 3
+    border_color_a: .5
+    border_color_a: 1
+    adaptive_height:True
+    radius: [3]
+    size_hint: None, None
+    size: app.size_x/1.5, app.size_y/11
+    focus_behavior: False
+    ripple_color:.9, .9, .95, 1
+    ripple_behavior: False
+    name:""
+    pos_code:""
+    on_release:
+        print(root.name)
+        app.selected_venue = root.name
+        app.get_capacity()
+    FloatLayout:
+        MDIcon:
+            icon:"home-variant"
+            font_size:"30sp"
+            theme_text_color:"Custom"
+            text_color: "#626A68"
+            pos_hint:{"center_x":.07,"center_y":.5}
+        MDLabel:
+            text:root.name
+            font_size:"20sp"
+            halign:"left"
+            pos_hint:{"center_x":.65,"center_y":.5}
+            font_name:"components/fonts/Gill Sans.otf"
+
 <ModCard@MDCard>:
     #orientation: "vertical"
     md_bg_color: "#ABBEC4"
@@ -925,6 +1013,134 @@ MDScreen:
     focus_behavior: False
     ripple_behavior: True
     pos_hint:{"center_x":.87,"center_y":.93}
+
+<EditForm@MDBoxLayout>:
+	md_bg_color:"#626A68"
+	size_hint:None, None
+    size:"550dp", "250dp"
+    radius:15
+    #adaptive_width:True
+    orientation:"vertical"
+    name:"hello"
+    FloatLayout:
+        MDTextField:
+			id:Vsize
+		    mode: "rectangle"
+		    fill_color: 0, 0, 0, .4
+		    size_hint: .3, None
+		    hint_text:"Capacity"
+		    #pos_hint:{'center_x':.5, 'center_y':.73}
+		    text_color: 0, 0, 0, 1
+		    font_size: dp(25)
+		    pos_hint:{"center_x":.45, "center_y":.65}
+	    MDRaisedButton:
+	        id:l
+	        text: "Edit"
+	        md_bg_color:"#626A68"
+	        size_hint: .2, .09
+	        pos_hint:{'center_x':.3, 'center_y':.2}
+	        on_release:
+	            app.edit_capacity(Vsize.text)
+	            app.edit_form_pos = 9
+        MDRaisedButton:
+	        id:l
+	        text: "Cancel"
+	        md_bg_color:"#626A68"
+	        size_hint: .2, .09
+	        pos_hint:{'center_x':.6, 'center_y':.2}
+	        on_release:
+	            app.edit_form_pos = 9
+<VnInfo@MDBoxLayout>:
+	md_bg_color:"#626A68"
+	size_hint:None, None
+    size:"550dp", "250dp"
+    radius:15
+    #adaptive_width:True
+    orientation:"vertical"
+    FloatLayout:
+        MDIconButton:
+            icon:"pencil"
+            pos_hint:{"center_x":.9,"center_y":.86}
+            icon_size:dp("30")
+            theme_text_color:"Custom"
+	        text_color: "#C0C0C0"
+	        on_release:
+	            app.edit_form_pos = .5
+	    MDLabel:
+		    text:"Venue Info"
+		    halign:"center"
+		    font_size:dp("20")
+		    color: "#C0C0C0"
+		    pos_hint:{"center_x":.1,"center_y":.86}
+		    font_name:"components/fonts/Gill Sans.otf"
+	    MDLabel:
+	        text:app.selected_venue
+	        halign:"center"
+	        font_size:dp("30")
+	        color:"white"
+	        pos_hint:{"center_x":.3,"center_y":.66}
+	        font_name:"components/fonts/Gill Sans.otf"
+        MDLabel:
+		    text:"General Capacity:" + " " + app.venue_capacity
+		    halign:"left"
+		    font_size:dp("25")
+		    color: "#C0C0C0"
+		    pos_hint:{"center_x":.74,"center_y":.5}
+		    font_name:"components/fonts/Gill Sans.otf"
+	    MDLabel:
+		    text:"Exam Capacity:"+ " " + str(int(app.venue_capacity) - 20)
+		    halign:"left"
+		    font_size:dp("25")
+		    color: "#C0C0C0"
+		    pos_hint:{"center_x":.74,"center_y":.35}
+		    font_name:"components/fonts/Gill Sans.otf"
+
+<AddVenue@MDBoxLayout>:
+	md_bg_color:"#ABBEC4"
+	#adaptive_height:True
+	size_hint:None, None
+    size:"500dp", "250dp"
+    radius:15
+    #adaptive_width:True
+    orientation:"vertical"
+    FloatLayout:
+	    MDLabel:
+		    text:"Add Venue"
+		    halign:"center"
+		    font_size:dp("20")
+		    color:"#626A68"
+		    pos_hint:{"center_x":.5,"center_y":.91}
+		    font_name:"components/fonts/Gill Sans.otf"
+		MDTextField:
+			id:venue_name
+		    mode: "rectangle"
+		    fill_color: 0, 0, 0, .4
+		    size_hint: .8, None
+		    hint_text:"Venue Name"
+		    #pos_hint:{'center_x':.5, 'center_y':.73}
+		    text_color: 0, 0, 0, 1
+		    font_size: dp(25)
+		    pos_hint:{"center_x":.5, "center_y":.75}
+	    MDTextField:
+	        id:venue_capacities
+		    mode: "rectangle"
+		    fill_color: 0, 0, 0, .4
+		    size_hint: .4, None
+		    hint_text:"Venue Capacity"
+		    #pos_hint:{'center_x':.5, 'center_y':.73}
+		    text_color: 0, 0, 0, 1
+		    font_size: dp(25)
+		    pos_hint:{"center_x":.3, "center_y":.43}
+	    MDRaisedButton:
+	        id:l
+	        text: "Submit"
+	        md_bg_color:"#626A68"
+	        size_hint: .2, .095
+	        pos_hint:{'center_x':.8, 'center_y':.2}
+	        on_release:
+	            app.add_venue(venue_name.text, venue_capacities.text)
+	            venue_name.text = ""
+	            venue_capacities.text = ""
 
 <AddForm@MDBoxLayout>:
 	md_bg_color:"#ABBEC4"

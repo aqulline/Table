@@ -53,6 +53,10 @@ class MainApp(MDApp):
     all_modules = DictProperty({})
     deleted_module = StringProperty("")
 
+    # Venues
+    all_venues = DictProperty({})
+    selected_venue = StringProperty("")
+
     def on_start(self):
         Clock.schedule_once(self.keyboard_hooker, .1)
 
@@ -349,6 +353,70 @@ class MainApp(MDApp):
 
     """"
             END TABLES FUNCTIONS
+    """
+
+    """
+                VENUES fUNCTION
+    
+    """
+
+    def get_venues(self):
+        self.all_venues = self.load("datas/venues.json")
+
+    def load_venues(self):
+        self.spin_dialog()
+        Clock.schedule_once(self.display_venues, 3)
+
+    def search_venue(self, text):
+        text = text.upper()
+        self.get_venues()
+        self.root.ids.disvenues.data = {}
+        for i in self.all_venues:
+            if text in i:
+                self.root.ids.disvenues.data.append(
+                    {
+                        "viewclass": "VenCard",
+                        "name": i,
+
+                    }
+                )
+
+    venue_capacity = StringProperty("0")
+    edit_form_pos = NumericProperty(9)
+    info_display_pos = NumericProperty(9)
+    add_venue_pos = NumericProperty(9)
+
+    def get_capacity(self):
+        self.venue_capacity = self.all_venues[self.selected_venue]["size"]
+        self.info_display_pos = .5
+
+    def display_venues(self, *args):
+        self.get_venues()
+        self.root.ids.disvenues.data = {}
+        for i in self.all_venues:
+            self.root.ids.disvenues.data.append(
+                {
+                    "viewclass": "VenCard",
+                    "name": i,
+
+                }
+            )
+        self.dialog_spin.dismiss()
+
+    def edit_capacity(self, size):
+        venue = self.selected_venue
+
+        DB.edit_venue(DB(), venue, size)
+        self.get_venues()
+        self.get_capacity()
+
+    def add_venue(self, venue, size):
+        DB.add_venue(DB(), venue, size)
+        self.get_venues()
+        self.load_venues()
+
+    """
+                END VENUES
     """
 
     def screen_capture(self, screen):
