@@ -366,3 +366,301 @@ class Timetable:
         import to_html
 
 
+class Ue:
+    venue_day_time_100 = []
+
+    venue_day_time_10 = []
+
+    venue_day_time_b50 = []
+
+    venue_day_time_a50 = []
+
+    venue_day_time_a120 = []
+
+    venue_day_time_b120 = []
+
+    weeks = ["w1", "w2", "w3"]
+
+    days = ['Monday', 'Tuesday',
+            'Wednesday', 'Thursday', 'Friday', "Saturday"]
+
+    modules_list = []
+
+    table_time = []
+
+    timetable = {}
+
+    programmes = []
+
+    mph = []
+
+    dog = ""
+    cat = ""
+    cow = ""
+    pig = ""
+
+    def __init__(self):
+        self.vnb120 = None
+        self.vna120 = None
+        self.vna50 = None
+        self.vnb50 = None
+
+    def load(self, name):
+        with open(name, "r") as file:
+            initial_data = json.load(file)
+        return initial_data
+
+    def write(self, data):
+        with open("datas/Ue.json", "w") as file:
+            initial_data = json.dumps(data, indent=4)
+            file.write(initial_data)
+
+    def venue_b50(self):
+        self.vnb50 = self.load("datas/venueb50.json")
+        venuesb50 = [i for i in self.vnb50.keys()]
+        self.venue_day_time_b50 = [[f"{h};{i};{k};{j}" for j in self.table_time] for k in self.days
+                                   for i in venuesb50 for h in self.weeks]
+        return self.venue_day_time_b50
+
+    def venue_a50(self):
+        self.vna50 = self.load("datas/venuea50.json")
+        venuea50 = [i for i in self.vna50.keys()]
+        self.venue_day_time_a50 = [[f"{h};{i};{k};{j}" for j in self.table_time] for k in self.days
+                                   for i in venuea50 for h in self.weeks]
+
+        return self.venue_day_time_a50
+
+    def venue_a120(self):
+        self.vna120 = self.load("datas/venuea120.json")
+        venuea120 = [i for i in self.vna120.keys()]
+        self.venue_day_time_a120 = [[f"{h};{i};{k};{j}" for j in self.table_time] for k in self.days
+                                    for i in venuea120 for h in self.weeks]
+
+        return self.venue_day_time_a120
+
+    def venue_b120(self):
+        self.vnb120 = self.load("datas/venueb120.json")
+        venueb120 = [i for i in self.vnb120.keys()]
+        self.venue_day_time_b120 = [[f"{h};{i};{k};{j}" for j in self.table_time] for k in self.days
+                                    for i in venueb120 for h in self.weeks]
+        return self.venue_day_time_b120
+
+    def get_programmes(self):
+        programes = self.load("datas/module.json")
+
+        self.programmes = [i for i in
+                           programes.keys()]
+
+        return self.programmes
+
+    def get_modules(self):
+        modules = self.load("datas/module.json")
+
+        self.modules_list = [[modules[i][j].strip() for j in modules[i]]
+                             for i in modules]
+        return self.modules_list
+
+    def get_time(self, time_in, time_out, ranges):
+        ti_di = time_out - time_in
+        for i in range(int(ti_di / (ranges - 1))):
+            times = f"{time_in}:00"
+            for j in range(ranges - 1):
+                time_in += 1
+            times = f"{times}-{time_in}:00"
+
+            self.table_time.append(times)
+
+        return self.table_time
+
+    def get_size(self, text):
+        import re
+
+        pattern = r'^(.*?)\s*\((\d+)\)$'
+
+        match = re.match(pattern, text)
+
+        if match:
+            extracted_text = match.group(1).strip()
+            extracted_number = match.group(2)
+
+            return extracted_number
+        else:
+            print("No match found.")
+
+    def set_venues(self):
+        self.get_time(7, 19, 4)
+        self.venue_b50()
+        self.venue_a50()
+        self.venue_b120()
+        self.venue_a120()
+
+    def remove_empty_lists(self, input_list):
+        return [sublist for sublist in input_list if sublist]
+
+    def gernerate_ue(self):
+        self.get_programmes()
+        self.get_modules()
+        self.set_venues()
+        for i in range(len(self.programmes)):
+            programe = self.programmes[i]
+            modules = self.modules_list[i]
+
+            for module in modules:
+                student_size = self.get_size(programe)
+                if int(student_size) < 40:
+                    data = self.venue_day_time_b50
+
+                    rnd_venue_list = random.choice(data)
+                    current_pos = rnd_venue_list[0].strip().split(";")[2]
+
+                    while self.dog == current_pos:
+                        print(self.dog, current_pos)
+                        rnd_venue_list = random.choice(data)
+                        current_pos = rnd_venue_list[0].strip().split(";")[2]
+
+                    self.dog = rnd_venue_list[0].strip().split(";")[2]
+                    week_venue_day_time = random.choice(rnd_venue_list)
+
+                    exam_week = week_venue_day_time.strip().split(";")[0]
+                    exam_venue = week_venue_day_time.strip().split(";")[1]
+                    exam_day = week_venue_day_time.strip().split(";")[2]
+                    exam_time = week_venue_day_time.strip().split(";")[3]
+                    venue_size = self.vnb50[exam_venue]["size"]
+
+                    removed_day = data[data.index(rnd_venue_list)][rnd_venue_list.index(week_venue_day_time)]
+                    data[data.index(rnd_venue_list)].remove(removed_day)
+
+                    if programe not in self.timetable:
+                        self.timetable[programe] = {}
+
+                    self.timetable[programe][module] = {
+                        "venue": exam_venue,
+                        "day": exam_day,
+                        "time": exam_time,
+                        "week": exam_week,
+                        "module": module,
+                        "program": programe,
+                        "students_size": student_size,
+                        "venue_size": venue_size
+                    }
+                elif 70 >= int(student_size) > 40:
+                    data = self.venue_day_time_a50
+
+                    data = self.remove_empty_lists(data)
+                    rnd_venue_list = random.choice(data)
+                    print(rnd_venue_list, data)
+                    current_pos = rnd_venue_list[0].strip().split(";")[2]
+
+                    while self.cat == current_pos:
+                        print(self.cat, current_pos)
+                        rnd_venue_list = random.choice(data)
+                        current_pos = rnd_venue_list[0].strip().split(";")[2]
+
+                    self.cat = rnd_venue_list[0].strip().split(";")[2]
+                    week_venue_day_time = random.choice(rnd_venue_list)
+
+                    exam_week = week_venue_day_time.strip().split(";")[0]
+                    exam_venue = week_venue_day_time.strip().split(";")[1]
+                    exam_day = week_venue_day_time.strip().split(";")[2]
+                    exam_time = week_venue_day_time.strip().split(";")[3]
+                    venue_size = self.vna50[exam_venue]["size"]
+
+                    removed_day = data[data.index(rnd_venue_list)][rnd_venue_list.index(week_venue_day_time)]
+                    data[data.index(rnd_venue_list)].remove(removed_day)
+                    data = self.remove_empty_lists(data)
+
+                    if programe not in self.timetable:
+                        self.timetable[programe] = {}
+
+                    self.timetable[programe][module] = {
+                        "venue": exam_venue,
+                        "day": exam_day,
+                        "time": exam_time,
+                        "week": exam_week,
+                        "module": module,
+                        "program": programe,
+                        "students_size": student_size,
+                        "venue_size": venue_size
+                    }
+                elif 120 >= int(student_size) > 70:
+                    data = self.venue_day_time_b120
+
+                    rnd_venue_list = random.choice(data)
+                    current_pos = rnd_venue_list[0].strip().split(";")[2]
+
+                    while self.cow == current_pos:
+                        print(self.cow, current_pos)
+                        rnd_venue_list = random.choice(data)
+                        current_pos = rnd_venue_list[0].strip().split(";")[2]
+
+                    self.cow = rnd_venue_list[0].strip().split(";")[2]
+                    week_venue_day_time = random.choice(rnd_venue_list)
+
+                    exam_week = week_venue_day_time.strip().split(";")[0]
+                    exam_venue = week_venue_day_time.strip().split(";")[1]
+                    exam_day = week_venue_day_time.strip().split(";")[2]
+                    exam_time = week_venue_day_time.strip().split(";")[3]
+                    venue_size = self.vnb120[exam_venue]["size"]
+
+                    removed_day = data[data.index(rnd_venue_list)][rnd_venue_list.index(week_venue_day_time)]
+                    data[data.index(rnd_venue_list)].remove(removed_day)
+
+                    if programe not in self.timetable:
+                        self.timetable[programe] = {}
+
+                    self.timetable[programe][module] = {
+                        "venue": exam_venue,
+                        "day": exam_day,
+                        "time": exam_time,
+                        "week": exam_week,
+                        "module": module,
+                        "program": programe,
+                        "students_size": student_size,
+                        "venue_size": venue_size
+                    }
+                elif int(student_size) > 120:
+                    data = self.venue_day_time_a120
+
+                    data = self.remove_empty_lists(data)
+                    rnd_venue_list = random.choice(data)
+                    print("ab120", rnd_venue_list)
+                    current_pos = rnd_venue_list[0].strip().split(";")[2]
+
+                    while self.pig == current_pos:
+                        print(self.pig, current_pos)
+                        rnd_venue_list = random.choice(data)
+                        current_pos = rnd_venue_list[0].strip().split(";")[2]
+
+                    self.pig = rnd_venue_list[0].strip().split(";")[2]
+                    week_venue_day_time = random.choice(rnd_venue_list)
+
+                    exam_week = week_venue_day_time.strip().split(";")[0]
+                    exam_venue = week_venue_day_time.strip().split(";")[1]
+                    exam_day = week_venue_day_time.strip().split(";")[2]
+                    exam_time = week_venue_day_time.strip().split(";")[3]
+                    venue_size = self.vna120[exam_venue]["size"]
+
+                    removed_day = data[data.index(rnd_venue_list)][rnd_venue_list.index(week_venue_day_time)]
+                    data[data.index(rnd_venue_list)].remove(removed_day)
+
+                    if programe not in self.timetable:
+                        self.timetable[programe] = {}
+
+                    self.timetable[programe][module] = {
+                        "venue": exam_venue,
+                        "day": exam_day,
+                        "time": exam_time,
+                        "week": exam_week,
+                        "module": module,
+                        "program": programe,
+                        "students_size": student_size,
+                        "venue_size": venue_size
+                    }
+
+            self.dog = ""
+            self.pig = ""
+            self.cat = ""
+            self.cow = ""
+        self.write(self.timetable)
+        import ue_mph
+        import ue_html

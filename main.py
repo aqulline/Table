@@ -1,4 +1,5 @@
 import json
+import os
 
 from kivy import utils
 from kivy.base import EventLoop
@@ -16,6 +17,7 @@ from kivymd.uix.dialog import MDDialog
 import webbrowser
 from database import DataBase as DB
 from generate import Timetable as TB
+from generate import Ue
 
 Window.keyboard_anim_args = {"d": .2, "t": "linear"}
 Window.softinput_mode = "below_target"
@@ -179,11 +181,15 @@ class MainApp(MDApp):
 
     exam_days = StringProperty("")
     table_time = StringProperty("")
+    ue_table_time = StringProperty("")
     dialog_spin = ObjectProperty(None)
 
     table_fail = StringProperty("0")
     table_finish = StringProperty("0")
     table_succeed = StringProperty("0")
+
+    table_ue_finish = StringProperty("0")
+    table_ue_succeed = StringProperty("0")
 
     table_notify = StringProperty("")
     buttons, data_tables = ObjectProperty(None), ObjectProperty(None)
@@ -227,14 +233,12 @@ class MainApp(MDApp):
         self.table_succeed = str(int(self.table_succeed) + 1)
         self.table_notify = str("+1")
 
-
     def data_specific_table(self):
         num_rows = 6
         num_cols = 7
         row_data = []
         temp_code = {}
         data = self.load("datas/tble.json")
-
 
         for i in data[self.selected_programme]:
             period_one = data[self.selected_programme][i]["period_one_dt"]
@@ -251,7 +255,7 @@ class MainApp(MDApp):
             temp_code[period_two] = i
         # Generate the row_data
         for row_num in range(1, num_rows + 1):
-            row = [TB.days[row_num-1]]
+            row = [TB.days[row_num - 1]]
             for col_num in range(1, num_cols + 1):
                 cell = f"d{row_num}t{col_num}"
                 if cell in temp_code:
@@ -274,7 +278,7 @@ class MainApp(MDApp):
                 ("13:00-15:00", dp(60)),
                 ("15:00-17:00", dp(60)),
                 ("17:00-19:00", dp(60)),
-                ("9:00-21:00", dp(60)),
+                ("19:00-21:00", dp(60)),
             ],
             row_data=self.data_specific_table(),
             sorted_on="Schedule",
@@ -299,14 +303,53 @@ class MainApp(MDApp):
             else:
                 self.data_tables.pos_hint = {"center_x": .5, "center_y": .5}
 
+    def count_time_table(self):
+        if os.path.isfile("datas/table.html"):
+            self.table_finish = str(1)
+            self.table_succeed = "1"
+            self.root.ids.Gview.pos_hint = {"center_x": .3, "center_y": .3}
+            self.root.ids.Gpublish.pos_hint = {"center_x": .75, "center_y": .3}
+            self.root.ids.Gnot.pos_hint = {"center_x": 9, "center_y": .4}
 
+        if os.path.isfile("datas/ue_table.html"):
+            self.table_ue_finish = str(1)
+            self.table_ue_succeed = "1"
+            self.root.ids.uview.pos_hint = {"center_x": .3, "center_y": .3}
+            self.root.ids.upublish.pos_hint = {"center_x": .75, "center_y": .3}
+            self.root.ids.unot.pos_hint = {"center_x": 9, "center_y": .4}
+
+    def set_ue_time(self, time_in, time_out, ranges):
+        if time_in != "" and time_out != "" and ranges != "":
+            table_time = Ue.get_time(Ue(), int(time_in), int(time_out), int(ranges))
+            for i in table_time:
+                self.ue_table_time = f"{self.ue_table_time} {i},"
+        else:
+            Ue.table_time = []
+            self.ue_table_time = ""
+
+    def generate_ue_caller(self):
+        if Ue.table_time:
+            self.spin_dialog()
+            Clock.schedule_once(self.generate_ue_timetable, 5)
+        else:
+            toast("Set Time!")
+
+    def generate_ue_timetable(self, *args):
+        Ue.gernerate_ue(Ue())
+        self.dialog_spin.dismiss()
+        self.table_ue_finish = str(int(self.table_ue_finish) + 1)
+        self.table_ue_succeed = str(int(self.table_ue_succeed) + 1)
+        self.table_notify = str("+1")
+
+    def view_table(self):
+        webbrowser.open("datas/table.html")
+
+    def view_ue_table(self):
+        webbrowser.open("http://localhost:63342/Table/datas/htvie.html")
 
     """"
             END TABLES FUNCTIONS
     """
-
-    def view_table(self):
-        webbrowser.open("datas/table.html")
 
     def screen_capture(self, screen):
         sm = self.root.ids.manager

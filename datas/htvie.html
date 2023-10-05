@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Timetable</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            text-align: left;
+            padding: 21px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Timetable</h1>
+
+    <!-- Placeholder for loading the table -->
+    <div id="tableContainer"></div>
+
+    <!-- Include JavaScript to load the table -->
+    <script>
+        // Fetch the table content and inject it into the placeholder
+        fetch('ue_table.html')
+            .then(response => response.text())
+            .then(tableHtml => {
+                document.getElementById('tableContainer').innerHTML = tableHtml;
+            })
+            .catch(error => {
+                console.error('Error loading the table:', error);
+            });
+    </script>
+</body>
+</html>
