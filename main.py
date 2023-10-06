@@ -49,16 +49,20 @@ class MainApp(MDApp):
     specific_programme = StringProperty("")
     selected_programme = StringProperty("")
     modules_count = StringProperty("0")
-    programme_size = StringProperty("")
+    programme_size = StringProperty("0")
     all_modules = DictProperty({})
     deleted_module = StringProperty("")
 
     # Venues
     all_venues = DictProperty({})
     selected_venue = StringProperty("")
+    total_venue = StringProperty("0")
+
 
     def on_start(self):
         Clock.schedule_once(self.keyboard_hooker, .1)
+        self.load_venues()
+        self.load_all_programmes()
 
     def keyboard_hooker(self, *args):
         EventLoop.window.bind(on_keyboard=self.hook_keyboard)
@@ -362,6 +366,7 @@ class MainApp(MDApp):
 
     def get_venues(self):
         self.all_venues = self.load("datas/venues.json")
+        self.total_venue = str(len(self.all_venues))
 
     def load_venues(self):
         self.spin_dialog()

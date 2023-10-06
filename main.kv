@@ -12,7 +12,6 @@ MDScreen:
                     pos_hint: {"top": 1}
                     md_bg_color: "#ABBEC4"
                     specific_text_color: "#4a4939"
-
                 MD3Card:
                     pos_hint:{"center_x":.2,"center_y":.7}
                     on_release:
@@ -69,6 +68,55 @@ MDScreen:
                             font_size:"160sp"
                             color:"#626A68"
                             pos_hint:{"center_x":.3,"center_y":.35}
+                MDLabel:
+	                text:"Quick Summary"
+	                halign:"center"
+	                font_style:"H4"
+	                color:"black"
+	                pos_hint:{"center_x":.1,"center_y":.41}
+	                font_name:"components/fonts/Gill Sans.otf"
+                MDLabel:
+                    text:"Total Programmes"
+                    halign:"center"
+                    font_size:dp("35")
+                    color:"gray"
+                    pos_hint:{"center_x":.2,"center_y":.08}
+                    font_name:"components/fonts/Gill Sans.otf"
+                MDLabel:
+                    text:"Total Venues"
+                    halign:"center"
+                    font_size:dp("35")
+                    color:"gray"
+                    pos_hint:{"center_x":.5,"center_y":.08}
+                    font_name:"components/fonts/Gill Sans.otf"
+                MDLabel:
+                    text:"Teachers"
+                    halign:"center"
+                    font_size:dp("35")
+                    color:"gray"
+                    pos_hint:{"center_x":.8,"center_y":.08}
+                    font_name:"components/fonts/Gill Sans.otf"
+                MDLabel:
+                    text:app.all_programmes_count
+                    halign:"center"
+                    font_size:dp("200")
+                    color:"#ABBEC4"
+                    pos_hint:{"center_x":.2,"center_y":.2}
+                    font_name:"components/fonts/Gill Sans.otf"
+                MDLabel:
+                    text:app.total_venue
+                    halign:"center"
+                    font_size:dp("200")
+                    color:"#ABBEC4"
+                    pos_hint:{"center_x":.5,"center_y":.2}
+                    font_name:"components/fonts/Gill Sans.otf"
+                MDLabel:
+                    text:"0"
+                    halign:"center"
+                    font_size:dp("200")
+                    color:"#ABBEC4"
+                    pos_hint:{"center_x":.8,"center_y":.2}
+                    font_name:"components/fonts/Gill Sans.otf"
 			MDScreen:
                 name:"general"
                 FloatLayout:
@@ -494,6 +542,13 @@ MDScreen:
                         color:"#4a4939"
                         pos_hint:{"center_x":.09,"center_y":.94}
                         font_name:"components/fonts/Gill Sans.otf"
+                    MDLabel:
+	                    text:"Total Venues:"+" "+app.total_venue
+	                    halign:"center"
+	                    pos_hint:{"center_x":.09,"center_y":.91}
+	                    font_name:"components/fonts/Gill Sans.otf"
+	                    color:"#4a4939"
+	                    #font_style:"Caption"
                     MDTextField:
                         id:Vsearch
                         hint_text: "search Venues"
