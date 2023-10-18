@@ -5,15 +5,23 @@ MDScreen:
             id:manager
             transition:sm.FadeTransition(duration=.0)
             MDScreen:
+                md_bg_color:"#EDEDE9"
                 name:"home"
                 MDTopAppBar:
                     title: "Dashboard"
                     elevation: 1
                     pos_hint: {"top": 1}
-                    md_bg_color: "#ABBEC4"
+                    md_bg_color: "#D5BDAF"
                     specific_text_color: "#4a4939"
+                MDLabel:
+	                text:"TimeTables"
+	                halign:"center"
+	                font_size:"40sp"
+	                color:"black"
+	                pos_hint:{"center_x":.1,"center_y":.86}
+	                font_name:"components/fonts/Gill Sans.otf"
                 MD3Card:
-                    pos_hint:{"center_x":.2,"center_y":.7}
+                    pos_hint:{"center_x":.2,"center_y":.68}
                     on_release:
                         app.screen_capture("general")
                         app.get_days()
@@ -33,7 +41,7 @@ MDScreen:
                             color:"#626A68"
                             pos_hint:{"center_x":.3,"center_y":.35}
                 MD3Card:
-                    pos_hint:{"center_x":.5,"center_y":.7}
+                    pos_hint:{"center_x":.5,"center_y":.68}
                     FloatLayout:
                         MDLabel:
                             text:"Test"
@@ -49,7 +57,7 @@ MDScreen:
                             color:"#626A68"
                             pos_hint:{"center_x":.3,"center_y":.35}
                 MD3Card:
-                    pos_hint:{"center_x":.8,"center_y":.7}
+                    pos_hint:{"center_x":.8,"center_y":.68}
                     on_release:
                         app.screen_capture("ue")
                         app.get_days()
@@ -73,52 +81,31 @@ MDScreen:
 	                halign:"center"
 	                font_style:"H4"
 	                color:"black"
-	                pos_hint:{"center_x":.1,"center_y":.41}
+	                pos_hint:{"center_x":.1,"center_y":.48}
 	                font_name:"components/fonts/Gill Sans.otf"
-                MDLabel:
-                    text:"Total Programmes"
-                    halign:"center"
-                    font_size:dp("35")
-                    color:"gray"
-                    pos_hint:{"center_x":.2,"center_y":.08}
-                    font_name:"components/fonts/Gill Sans.otf"
-                MDLabel:
-                    text:"Total Venues"
-                    halign:"center"
-                    font_size:dp("35")
-                    color:"gray"
-                    pos_hint:{"center_x":.5,"center_y":.08}
-                    font_name:"components/fonts/Gill Sans.otf"
-                MDLabel:
-                    text:"Teachers"
-                    halign:"center"
-                    font_size:dp("35")
-                    color:"gray"
-                    pos_hint:{"center_x":.8,"center_y":.08}
-                    font_name:"components/fonts/Gill Sans.otf"
-                MDLabel:
-                    text:app.all_programmes_count
-                    halign:"center"
-                    font_size:dp("200")
-                    color:"#ABBEC4"
-                    pos_hint:{"center_x":.2,"center_y":.2}
-                    font_name:"components/fonts/Gill Sans.otf"
-                MDLabel:
-                    text:app.total_venue
-                    halign:"center"
-                    font_size:dp("200")
-                    color:"#ABBEC4"
-                    pos_hint:{"center_x":.5,"center_y":.2}
-                    font_name:"components/fonts/Gill Sans.otf"
-                MDLabel:
-                    text:"0"
-                    halign:"center"
-                    font_size:dp("200")
-                    color:"#ABBEC4"
-                    pos_hint:{"center_x":.8,"center_y":.2}
-                    font_name:"components/fonts/Gill Sans.otf"
+                SummaryCard:
+                    pos_hint:{"center_x":.15, "center_y":.3}
+                    label:"programme"
+                    icon:"list-box-outline"
+                    number:app.all_programmes_count
+                SummaryCard:
+                    pos_hint:{"center_x":.35, "center_y":.3}
+                    label:"Venues"
+                    icon:"home-group"
+                    number:app.total_venue
+                SummaryCard:
+                    pos_hint:{"center_x":.55, "center_y":.3}
+                    label:"Departments"
+                    icon:"home-variant"
+                    number:"16"
+                SummaryCard:
+                    pos_hint:{"center_x":.75, "center_y":.3}
+                    label:"Teachers"
+                    icon:"account"
+                    number:"200"
 			MDScreen:
                 name:"general"
+                md_bg_color:"#EDEDE9"
                 FloatLayout:
                     MDLabel:
                         text:"General TimeTable"
@@ -268,6 +255,7 @@ MDScreen:
 
 			MDScreen:
                 name:"ue"
+                md_bg_color:"#EDEDE9"
                 FloatLayout:
                     MDLabel:
                         text:"Ue TimeTable"
@@ -418,6 +406,7 @@ MDScreen:
 
             MDScreen:
                 name:"program"
+                md_bg_color:"#EDEDE9"
                 FloatLayout:
                     Deco:
                     MDLabel:
@@ -485,6 +474,7 @@ MDScreen:
                                 pos_hint:{"center_x":.3,"center_y":.35}
             MDScreen:
                 name:"all_programmes"
+                md_bg_color:"#EDEDE9"
                 FloatLayout:
                     Image:
                         source:app.nodata
@@ -532,6 +522,7 @@ MDScreen:
 		                    #orientation: 'vertical'
             MDScreen:
                 name:"venues"
+                md_bg_color:"#EDEDE9"
                 FloatLayout:
                     Deco:
                         pos_hint:{"center_x":.5,"center_y":1.08}
@@ -579,6 +570,11 @@ MDScreen:
 					        app.add_venue_pos = .5
 					        app.info_display_pos = 9
 					        app.edit_form_pos = 9
+			        Image:
+			            source:"components/icons/think.png"
+			            pos_hint:{"center_x":.5,"center_y":.73}
+			            size_hint:None, None
+			            size:"500", "500"
 				    AddVenue:
 				        pos_hint:{"center_x":app.add_venue_pos,"center_y":.73}
 				    VnInfo:
@@ -601,6 +597,7 @@ MDScreen:
 		                    height: self.minimum_height
 		    MDScreen:
                 name:"timetable"
+                md_bg_color:"#EDEDE9"
                 MDLabel:
                     text:"TimeTable's"
                     halign:"center"
@@ -727,6 +724,7 @@ MDScreen:
 
 			MDScreen:
                 name:"specific_programmes"
+                md_bg_color:"#EDEDE9"
                 FloatLayout:
                     Deco:
                         pos_hint:{"center_x":.5,"center_y":1.046}
@@ -857,7 +855,7 @@ MDScreen:
             id: nav_drawer
             radius: (0, 0, 0, 0)
             type: "standard"
-            md_bg_color:"#88A2AA"
+            md_bg_color:"#E3D5CA"
 
             MDNavigationDrawerMenu:
 
@@ -913,7 +911,7 @@ MDScreen:
 
 <ProCard@MDCard>:
     #orientation: "vertical"
-    md_bg_color: "#ABBEC4"
+    md_bg_color: "#D6CCC2"
     pos_hint:{"center_x":.5,"center_y":.3}
     padding: "10dp"
     #spacing: "5dp"
@@ -951,7 +949,7 @@ MDScreen:
 
 <VenCard@MDCard>:
     #orientation: "vertical"
-    md_bg_color: "#ABBEC4"
+    md_bg_color: "#D6CCC2"
     pos_hint:{"center_x":.5,"center_y":.3}
     padding: "10dp"
     #spacing: "5dp"
@@ -1030,20 +1028,57 @@ MDScreen:
 
 
 <MD3Card@MDCard>:
-    md_bg_color: "#ABBEC4"
+    md_bg_color: "#D6CCC2"
     padding: 4
     size_hint: None, None
     radius: ("30sp")
     size: "400dp", "250dp"
     ripple_behavior: True
     focus_behavior:True
-    unfocus_color: "#ABBEC4"
-    focus_color: "#94ACB3"
+    unfocus_color: "#D6CCC2"
+    focus_color: "#F5EBE0"
     ripple_color:.9, .9, .95, 1
+
+<SummaryCard@MDCard>:
+    md_bg_color: "#D6CCC2"
+    padding: 4
+    size_hint: None, None
+    radius: ("20sp")
+    size: "250dp", "250dp"
+    ripple_behavior: True
+    focus_behavior:True
+    unfocus_color: "#D6CCC2"
+    focus_color: "#F5EBE0"
+    ripple_color:.9, .9, .95, 1
+    label:"name"
+    number:"Number"
+    icon:"dog"
+    FloatLayout:
+        MDIcon:
+            icon: root.icon
+            pos_hint:{"center_x":.3, "center_y":.7}
+            font_size:"80sp"
+            color:"#626A68"
+        MDLabel:
+	        text:root.label
+	        halign:"center"
+	        font_size:dp("24")
+	        color:"#4a4939"
+	        pos_hint:{"center_x":.35,"center_y":.4}
+	        font_name:"components/fonts/Gill Sans.otf"
+        MDLabel:
+	        text:root.number
+	        halign:"center"
+	        font_size:dp("60")
+	        color:"#626A68"
+	        pos_hint:{"center_x":.4,"center_y":.15}
+	        font_name:"components/fonts/Gill Sans.otf"
+
+
 
 <Deco@MDCard>:
     orientation: "vertical"
-    md_bg_color: "#e7e4c0"
+    md_bg_color: "#D5BDAF"
     padding: "10dp"
     #spacing: "5dp"
     border_radius: 3
@@ -1246,8 +1281,8 @@ MDScreen:
 
 
 <DrawerClickableItem@MDNavigationDrawerItem>
-    focus_color: "#e7e4c0"
-    unfocus_color:"#88A2AA"
+    focus_color: "#D5BDAF"
+    unfocus_color:"#E3D5CA"
     text_color: "#4a4939"
     icon_color: "#4a4939"
     ripple_color: "#c5bdd2"
